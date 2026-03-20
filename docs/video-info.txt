@@ -1,0 +1,40 @@
+VIDEO ANALYSIS INFORMATION
+
+----------------------------------------
+Video 1: car.mp4
+----------------------------------------
+Duration: 00:00:49
+Resolution: 1280x720 (HD)
+Frame Rate: 30 fps
+Codec: H.264 (High profile)
+Pixel Format: yuv420p
+Bitrate: ~3459 kb/s
+
+Description:
+This video contains fast motion content (moving cars).
+High motion scenes typically require higher bitrate
+to maintain visual quality during streaming.
+
+----------------------------------------
+Video 2: city.mp4
+----------------------------------------
+Duration: 00:00:53
+Resolution: 1280x720 (HD)
+Frame Rate: ~29.97 fps
+Codec: H.264 (High profile)
+Pixel Format: yuv420p
+Bitrate: ~2767 kb/s
+
+Description:
+This video contains relatively slower motion (city scenes).
+Lower motion content is less sensitive to bitrate changes
+and may maintain acceptable quality even at lower bitrates.
+
+----------------------------------------
+Observations:
+----------------------------------------
+- Both videos are HD (1280x720 resolution)
+- Both use H.264 codec (efficient for streaming)
+- Video 1 (car) has higher bitrate due to higher motion
+- Video 2 (city) has lower bitrate and smoother content
+
