@@ -1,0 +1,15 @@
+BASELINE TEST (NO NETWORK LIMITATIONS)
+
+Video: 		car
+Startup delay: 	Very low (1–2 seconds)
+Buffering: 	None
+Smoothness: 	Very smooth
+Quality: 	Excellent (HD)
+MOS: 		5 (Excellent)
+
+Video: 		citys
+Startup delay: 	Very low
+Buffering: 	None
+Smoothness: 	Very smooth
+Quality: 	Excellent
+MOS: 		5 (Excellent)

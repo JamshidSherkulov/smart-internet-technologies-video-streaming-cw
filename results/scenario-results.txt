@@ -1,0 +1,17 @@
+SCENARIO RESULTS
+
+Baseline:
+Car → Smooth, no buffering, MOS 5
+City → Smooth, no buffering, MOS 5
+
+TBF:
+Car → Slight buffering, reduced smoothness, MOS 3
+City → Minor impact, MOS 4
+
+HTB:
+Car → Mostly smooth, MOS 4
+City → Good quality, MOS 4
+
+Policing:
+Car → Frequent buffering, poor playback, MOS 2
+City → Moderate buffering, MOS 3

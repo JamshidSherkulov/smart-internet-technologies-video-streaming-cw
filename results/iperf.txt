@@ -1,0 +1,13 @@
+IPERF SCTP TEST
+
+Protocol: SCTP
+Bandwidth: ~1 Mbps
+Connection: Client → Server
+
+Observations:
+- Connection established successfully
+- Initial throughput observed
+- Throughput drops after few seconds (VM limitation)
+
+Conclusion:
+SCTP traffic generation successful but unstable in virtual environment.

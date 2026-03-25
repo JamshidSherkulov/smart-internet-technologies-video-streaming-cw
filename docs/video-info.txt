@@ -38,3 +38,72 @@ Observations:
 - Video 1 (car) has higher bitrate due to higher motion
 - Video 2 (city) has lower bitrate and smoother content
 
+
+----------------------------------------
+TRANSCODING OUTPUTS
+----------------------------------------
+
+The following transcoded versions were created for each video:
+
+car.mp4:
+- car_1500k.mp4
+- car_2000k.mp4
+- car_4000k.mp4
+
+city.mp4:
+- city_1500k.mp4
+- city_2000k.mp4
+- city_4000k.mp4
+
+Transcoding settings:
+- Video codec: H.264 (libx264)
+- Audio codec: AAC
+- Audio bitrate: 128 kb/s
+- Preset: medium
+
+Purpose:
+These versions were created to support adaptive bitrate streaming
+using MPEG-DASH. Lower bitrate versions can be used under limited
+bandwidth conditions, while higher bitrate versions provide better
+visual quality when more bandwidth is available.
+
+----------------------------------------
+DASH PACKAGING
+----------------------------------------
+
+Each video was converted into MPEG-DASH format using FFmpeg.
+
+For each video:
+- 3 bitrate streams were combined
+- A manifest file (.mpd) was created
+- Video segments (.m4s) were generated
+
+Command used:
+ffmpeg with -f dash option
+
+Purpose:
+DASH allows adaptive bitrate streaming, where the client
+can dynamically switch between different video qualities
+based on network conditions.
+
+----------------------------------------
+APACHE HOSTING
+----------------------------------------
+
+The DASH output files were copied into the Apache web server root
+directory under /var/www/html/dash/.
+
+Created paths:
+- /var/www/html/dash/car/
+- /var/www/html/dash/city/
+
+The web server was used to make the DASH manifest and segment files
+accessible via HTTP URLs.
+
+Example URLs:
+- http://localhost/dash/car/manifest.mpd
+- http://localhost/dash/city/manifest.mpd
+
+Purpose:
+This allows the client device and DASH player to request the manifest
+file and the corresponding video segments through standard web access.

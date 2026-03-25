@@ -1,0 +1,7 @@
+*.mp4
+*.mkv
+*.avi
+*.ts
+*.m4s
+videos-original/
+videos-transcoded/
